@@ -1,0 +1,27 @@
+<div class="appointment-form-container">
+  <h2>{{ appointmentId ? 'Editar Consulta' : 'Nova Consulta' }}</h2>
+  <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="description">Descrição</label>
+      <input type="text" id="description" formControlName="description" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="date">Data</label>
+      <input type="date" id="date" formControlName="date" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="patientId">Paciente</label>
+      <select id="patientId" formControlName="patientId" class="form-control">
+        <option *ngFor="let patient of patients" [value]="patient.id">{{ patient.name }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="medicoId">Médico</label>
+      <select id="medicoId" formControlName="medicoId" class="form-control">
+        <option *ngFor="let medico of medicos" [value]="medico.id">{{ medico.name }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  </form>
+</div>
+

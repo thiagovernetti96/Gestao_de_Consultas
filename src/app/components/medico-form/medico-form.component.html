@@ -1,0 +1,10 @@
+<h2>{{ medicoId ? 'Edit Medico' : 'Add Medico' }}</h2>
+<form [formGroup]="medicoForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name</label>
+  <input id="name" formControlName="name" />
+  <label for="age">Age</label>
+  <input id="age" formControlName="age" />
+  <label for="crm">CRM</label>
+  <input id="crm" formControlName="crm" />
+  <button type="submit">Save</button>
+</form>

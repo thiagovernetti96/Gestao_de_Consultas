@@ -1,0 +1,12 @@
+<h2 class="d-flex justify-content-center mt-2">Medicos</h2>
+<div class="d-flex flex-column align-items-center  gap-3"> 
+  <button><a routerLink="/dashboard">dashboard</a></button>
+  <button><a routerLink="/medicos/new">Add New Medico</a></button>
+</div>
+<ul class="d-flex flex-column align-items-center  ">
+  <li class="m-3" *ngFor="let medico of medicos">
+    <a [routerLink]="['/medicos', medico.id]">{{ medico.name }}</a>
+    <button class="ms-3 me-3" (click)="deleteMedico(medico.id!)">Delete</button>
+    <a [routerLink]="['/medicos/edit', medico.id]">Edit</a>
+  </li>
+</ul>

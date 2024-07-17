@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "doctor1",
+      "password": "password1",
+      "role": "doctor"
+    },
+    {
+      "id": "2",
+      "username": "doctor2",
+      "password": "password2",
+      "role": "doctor"
+    }
+  ],
+  "patients": [
+    {
+      "name": "Janaina Souza",
+      "age": 25,
+      "condition": "Flu",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Carlos Silva",
+      "age": "22",
+      "condition": "Dor na Coluna"
+    },
+    {
+      "id": "3",
+      "name": "Thiago Vernetti",
+      "age": "28",
+      "condition": "Artrite"
+    },
+    {
+      "id": "2458",
+      "name": "Julia lima",
+      "age": "23",
+      "condition": "Artrite"
+    }
+  ],
+  "medicos": [
+    {
+      "id": "1",
+      "name": "Tomás Costa",
+      "crm": 2025
+    },
+    {
+      "id": "2",
+      "name": "Dráuzio Varela",
+      "age": "22",
+      "condition": " jikj"
+    },
+    {
+      "id": "c955",
+      "name": "Paulo Souza",
+      "crm": "12"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "description": "Dor na Coluna",
+      "date": "2024-07-10",
+      "patientId": 1,
+      "medicoId": 1
+    },
+    {
+      "id": "2",
+      "description": "dor no pé",
+      "date": "2024-07-22",
+      "patientId": "df34",
+      "medicoId": "2"
+    },
+    {
+      "id": "3",
+      "description": "Apendicite",
+      "date": "2024-07-15",
+      "patientId": "df34",
+      "medicoId": "2"
+    },
+    {
+      "id": "4",
+      "description": "Gastrite",
+      "date": "2024-07-30",
+      "patientId": "df34",
+      "medicoId": "2"
+    },
+    {
+      "id": "e686",
+      "description": "Quimioterapia",
+      "date": "2024-07-15",
+      "patientId": "1",
+      "medicoId": "2"
+    }
+  ]
+}

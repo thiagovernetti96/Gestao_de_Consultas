@@ -1,0 +1,13 @@
+<h2 class="d-flex justify-content-center mt-2">Patients</h2>
+<div class="d-flex flex-column align-items-center gap-2"> 
+ <button><a routerLink="/patients/new">Add New Patient</a></button> 
+  <button><a routerLink="/dashboard">dashboard</a></button>
+</div>
+
+<ul class="d-flex flex-column align-items-center ">
+  <li class="m-3" *ngFor="let patient of patients">
+    <a [routerLink]="['/patients', patient.id]">{{ patient.name }}</a>
+    <button class="ms-3 me-3" (click)="deletePatient(patient.id!)">Delete</button>
+    <a [routerLink]="['/patients/edit', patient.id]">Edit</a>
+  </li>
+</ul>
