@@ -10,6 +10,7 @@ import { AppointmentService, Appointment } from '../../services/appointment.serv
 export class AppointmentDetailComponent implements OnInit {
   appointment: Appointment | undefined;
 
+
   constructor(
     private route: ActivatedRoute,
     private appointmentService: AppointmentService

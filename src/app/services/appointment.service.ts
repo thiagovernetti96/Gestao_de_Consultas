@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { from, Observable } from 'rxjs';
+import {Medico} from './medico.service';
+import {Patient} from './patient.service';
 
 export interface Appointment {
-  id?: number;
+  id: number;
   patientId: number;
   medicoId: number;
   date: string;
@@ -36,5 +38,13 @@ export class AppointmentService {
 
   deleteAppointment(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
+
+  getMedico(id: number): Observable<Medico> {
+    return this.http.get<Medico>(`/api/medicos/${id}`);
+  }
+  
+  getPatient(id: number): Observable<Patient> {
+    return this.http.get<Patient>(`/api/patients/${id}`);
   }
 }

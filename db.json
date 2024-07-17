@@ -37,13 +37,18 @@
       "name": "Julia lima",
       "age": "23",
       "condition": "Artrite"
+    },
+    {
+      "id": "02e1",
+      "name": "José Gomes",
+      "age": "28",
+      "condition": "Dor na Lombar"
     }
   ],
   "medicos": [
     {
-      "id": "1",
-      "name": "Tomás Costa",
-      "crm": 2025
+      "name": "Tomás Costo",
+      "id": "1"
     },
     {
       "id": "2",
@@ -59,39 +64,11 @@
   ],
   "appointments": [
     {
-      "id": "1",
-      "description": "Dor na Coluna",
-      "date": "2024-07-10",
-      "patientId": 1,
-      "medicoId": 1
-    },
-    {
-      "id": "2",
-      "description": "dor no pé",
-      "date": "2024-07-22",
-      "patientId": "df34",
-      "medicoId": "2"
-    },
-    {
-      "id": "3",
-      "description": "Apendicite",
-      "date": "2024-07-15",
-      "patientId": "df34",
-      "medicoId": "2"
-    },
-    {
-      "id": "4",
-      "description": "Gastrite",
-      "date": "2024-07-30",
-      "patientId": "df34",
-      "medicoId": "2"
-    },
-    {
-      "id": "e686",
-      "description": "Quimioterapia",
-      "date": "2024-07-15",
+      "description": "Dor no pé",
+      "date": "2024-09-18",
       "patientId": "1",
-      "medicoId": "2"
+      "medicoId": "1",
+      "id": "1"
     }
   ]
 }

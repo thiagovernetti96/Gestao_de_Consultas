@@ -29,5 +29,11 @@ export class AppointmentListComponent implements OnInit {
       this.filteredAppointments = this.appointments;
     }
   }
+
+  deleteAppointment(id: number): void {
+    this.appointmentService.deleteAppointment(id).subscribe(() => {
+      this.appointments = this.appointments.filter(a => a.id !== id);
+    });
+  }
 }
 

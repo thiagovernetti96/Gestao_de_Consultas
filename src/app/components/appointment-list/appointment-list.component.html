@@ -7,10 +7,11 @@
   </div>
  
   <div class="d-flex justify-content-center mt-3"> <input  type="text" [(ngModel)]="searchTerm" (input)="filterAppointments()" placeholder="Buscar consultas..."></div>  
-  <ul class="d-flex flex-column align-items-center mt-3 gap-3">
-    
-    <li *ngFor="let appointment of filteredAppointments">
-      <a [routerLink]="['/appointments', appointment.id]">{{ appointment.description }} - {{ appointment.date }}</a>
+  <ul class="d-flex flex-column align-items-center ">
+    <li class="m-3" *ngFor="let appointment of filteredAppointments">
+      <a [routerLink]="['/appointments', appointment.id]">{{ appointment.description }} - {{appointment.date}}</a>
+      <button class="ms-3 me-3" (click)="deleteAppointment(appointment.id)">Delete</button>
+      <a [routerLink]="['/appointments/edit', appointment.id]">Edit</a>
     </li>
   </ul>
 </div>

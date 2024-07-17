@@ -20,7 +20,6 @@
     "@angular/router": "^17.3.0",
     "bootstrap": "^5.3.3",
     "express": "^4.19.2",
-    "json-server": "^1.0.0-beta.1",
     "json-server-auth": "^2.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

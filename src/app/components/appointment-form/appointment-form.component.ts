@@ -12,7 +12,7 @@ import { MedicoService } from '../../services/medico.service';
 })
 export class AppointmentFormComponent implements OnInit {
   appointmentForm: FormGroup;
-  appointmentId: number | null = null; // Inicialização para evitar erro
+  appointmentId: number | null = null;
   patients: any[] = [];
   medicos: any[] = [];
 

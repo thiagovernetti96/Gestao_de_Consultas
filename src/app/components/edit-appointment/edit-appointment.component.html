@@ -1,5 +1,9 @@
 <div class="appointment-form-container">
-  <h2>Editar Consulta</h2>
+  <div class="d-flex flex-column align-items-center">
+    <h2 >Editar Consulta</h2>
+    <button><a routerLink="/dashboard">dashboard</a></button>
+  </div>
+  
   <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="description">Descrição</label>

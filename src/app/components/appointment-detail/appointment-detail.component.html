@@ -1,6 +1,10 @@
+
 <div *ngIf="appointment">
   <h2>Detalhes da Consulta</h2>
+  <button><a routerLink="/dashboard">dashboard</a></button>
   <p><strong>ID:</strong> {{ appointment.id }}</p>
   <p><strong>Descrição:</strong> {{ appointment.description }}</p>
   <p><strong>Data:</strong> {{ appointment.date }}</p>
+  <p><strong>Médico:</strong>{{appointment.medicoId}}</p>
+  <P><strong>Patient:</strong>{{appointment.patientId}}</P>
 </div>
